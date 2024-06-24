@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 500px; /* Fixed height to fit the aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container::before,
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-container::before {
+    background-image: url('https://images.unsplash.com/photo-1587502536263-929d027c5d7e'); /* Mountain image URL */
+    opacity: 0.6; /* Adjust opacity to make the overlapping effect visible */
+    z-index: 1;
+}
+
+.image-container::after {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Sea image URL */
+    opacity: 0.6; /* Adjust opacity to make the overlapping effect visible */
+    z-index: 2;
+    mix-blend-mode: screen; /* Optional: Adjust blend mode for different visual effects */
+}
+display: flex;
+justify-content: center;
+body {
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 500px; /* Fixed height to fit the aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container::before,
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-container::before {
+    background-image: url('https://images.unsplash.com/photo-1587502536263-929d027c5d7e'); /* Mountain image URL */
+    opacity: 0.6; /* Adjust opacity to make the overlapping effect visible */
+    z-index: 1;
+}
+
+.image-container::after {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Sea image URL */
+    opacity: 0.6; /* Adjust opacity to make the overlapping effect visible */
+    z-index: 2;
+    mix-blend-mode: screen; /* Optional: Adjust blend mode for different visual effects */
+}

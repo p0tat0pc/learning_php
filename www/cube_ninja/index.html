@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Ninja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- GamePlay -->
+    <div class="hub">
+        <div class="hub_score">
+            <div class="score-lbl"></div>
+            <div class="cube-count-lbl"></div>
+        </div>
+        <div class="pause-btn"><div></div></div>
+        <div class="slowmo">
+            <div class="slowmo__bar"></div>
+        </div>
+    </div>
+    <!-- Menu System -->
+    <div class="menus">
+        <div class="menu menu--main">
+            <h1>Welcome To Cube Ninja</h1>
+            <button type="button" class="play-normal-btn">Play Game</button>
+            <button type="button" class="play-casual-btn">Easy Mode</button>
+        </div>
+    </div>
+    <div class="menu menu--pause">
+        <h1>Game Paused</h1>
+        <button type="button" class="play-again-btn">Resume</button>
+        <button type="button" class="menu-btn--score">Restart</button>
+    </div>
+    <div class="menu menu--score">
+        <h1>Game Over</h1>
+        <h2>Your Score</h2>
+        <div class="final-score-lbl"></div>
+        <div class="high-score-lbl"></div>
+        <button type="button" class="play-again-btn">Play Again</button>
+        <button type="button" class="menu-btn--score">Main Menu</button>
+    </div>
+</body>
+</html>

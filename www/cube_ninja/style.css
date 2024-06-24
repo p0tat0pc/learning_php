@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2E2E2E; /* Dark grey background */
+    color: #E0E0E0; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Hub Styles */
+.hub {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hub_score {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.score-lbl, .cube-count-lbl {
+    background-color: #424242; /* Dark grey background */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pause-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #424242; /* Dark grey background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pause-btn div {
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700; /* Gold color for the pause icon */
+}
+
+.slowmo {
+    width: 200px;
+    height: 20px;
+    background-color: #424242; /* Dark grey background */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slowmo__bar {
+    width: 100%;
+    height: 100%;
+    background-color: #FFD700; /* Gold color for the slowmo bar */
+}
+
+/* Menu Styles */
+.menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    background-color: #424242; /* Dark grey background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.menu--main, .menu--pause, .menu--score {
+    display: block; /* Display the relevant menu */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #616161; /* Dark grey button background */
+    color: #E0E0E0; /* Light grey text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #757575; /* Slightly lighter dark grey on hover */
+}
+
+.final-score-lbl, .high-score-lbl {
+    background-color: #424242; /* Dark grey background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
